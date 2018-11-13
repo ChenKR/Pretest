@@ -14,7 +14,9 @@ would output
 
 			 
 */
-
+#include<stdio.h>
+#include <stdlib.h>
+#include<stddef.h>
 struct TreeNode {
 	int val;
 	struct TreeNode *left;
@@ -22,7 +24,7 @@ struct TreeNode {
  };
 int height(struct TreeNode* p)
 {
-   if(p== null)return 0;
+   if(p==NULL)return 0;
    else {
      int lh=height(p->left);
      int rh=height(p->right);
@@ -30,8 +32,8 @@ int height(struct TreeNode* p)
      else { return ( rh+1 ); }
 	}
 }
-int tree(struct TreeNode* p, int h) {
-    if(p==null) return;
+int main(struct TreeNode* p, int h) {
+    if(p==NULL) return;
     h=height(p);
 }
 

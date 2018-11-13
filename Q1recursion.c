@@ -4,7 +4,8 @@ f(1)=1
 f(n)=f(n-1)+ f(n-2)
 
 Please create a program to find f(n). (You can write in any language that you are good at.)*/
-
+#include<stdio.h>
+#include<stdlib.h>
 int f(int n)
 {
     if(n==0)

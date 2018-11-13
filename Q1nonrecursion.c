@@ -6,14 +6,16 @@ f(n)=f(n-1)+ f(n-2)
 Please create a program to find f(n). (You can write in any language that you are good at.)*/
 
 #include<stdio.h>
+#include<stdlib.h>
 long f(long n)
 {
    //If we use recursion to do this program the time will be to long
    //,so we use normal Formula to count f(n)
    unsigned long  a=0,b=1;
     unsigned long  temp;
+    int i;
    if(n==0 ||n==1) return n;
-   for (int i=2;i<=n;i++)
+   for (i=2;i<=n;i++)
    {
    	temp=b;
    	b=a+b;
